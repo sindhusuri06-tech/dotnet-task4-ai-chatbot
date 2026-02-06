@@ -1,0 +1,19 @@
+<h2>AI Chatbot</h2>
+
+<form method="post" action="/Chat/Reply">
+
+<input type="text"
+       name="UserMessage"
+       placeholder="Type message..."
+       required />
+
+<button type="submit">Send</button>
+
+</form>
+
+<br>
+
+@if(ViewBag.Bot != null)
+{
+    <b>Bot:</b> @ViewBag.Bot
+}
